@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="funcionalidad4" prefHeight="667.0" prefWidth="1142.0" styleClass="color1-1" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unad.documentinspector.FuncionalidadesController">
+    <children>
+
+        <Label layoutX="37.0" layoutY="17.0" text="Areas">
+            <font>
+                <Font name="Arial Bold" size="20.0" />
+            </font>
+        </Label>
+
+        <TableView fx:id="tablaFuncion4" layoutX="38.0" layoutY="89.0" prefHeight="362.0" prefWidth="496.0" styleClass="tabla-apli" stylesheets="@../css/styles.css">
+            <columns>
+                <TableColumn fx:id="nombreArea" prefWidth="147.20000457763672" text="Nombre" />
+                <TableColumn fx:id="fechaCrea" prefWidth="108.79995727539062" text="Fecha Registro" />
+                <TableColumn fx:id="userCrea" prefWidth="122.4000244140625" text="Usuario Registra" />
+                <TableColumn fx:id="cantidadCargos" prefWidth="114.39999389648438" text="Cargos Asignados" />
+            </columns>
+        </TableView>
+
+        <Label layoutX="245.0" layoutY="471.0" text="Nueva area">
+            <font>
+                <Font name="Arial Bold" size="15.0" />
+            </font>
+        </Label>
+
+        <TextField fx:id="nom" layoutX="156.0" layoutY="516.0" prefHeight="25.0" prefWidth="245.0" promptText="Nombre Area" />
+
+        <Button fx:id="guardar" layoutX="255.0" layoutY="563.0" mnemonicParsing="false" onAction="#guardarUsuario" text="Guardar" textAlignment="CENTER" />
+
+
+        <Label layoutX="564.0" layoutY="17.0" text="Cargo">
+            <font>
+                <Font name="Arial Bold" size="20.0" />
+            </font>
+        </Label>
+
+        <TableView fx:id="tablaFuncion4c" layoutX="553.0" layoutY="89.0" prefHeight="362.0" prefWidth="587.0" styleClass="tabla-apli" stylesheets="@../css/styles.css">
+            <columns>
+                <TableColumn fx:id="nombreCargo" prefWidth="208.7999267578125" text="Nombre" />
+                <TableColumn fx:id="fechaCreaCargo" prefWidth="94.13330078125" text="Fecha Registro" />
+                <TableColumn fx:id="userCreaCargo" prefWidth="104.0001220703125" text="Usuario Registra" />
+                <TableColumn fx:id="areaCargo" prefWidth="164.0" text="Cargos Asignados" />
+            </columns>
+        </TableView>
+
+        <Label layoutX="801.0" layoutY="471.0" text="Nuevo cargo">
+            <font>
+                <Font name="Arial Bold" size="15.0" />
+            </font>
+        </Label>
+
+        <TextField fx:id="nombreCarg" layoutX="625.0" layoutY="517.0" prefHeight="26.0" prefWidth="213.0" promptText="Nombre Cargo" />
+
+        <ComboBox fx:id="areasAsignar" layoutX="857.0" layoutY="516.0" prefHeight="26.0" prefWidth="216.0" promptText="Seleccione un area para el cargo" />
+
+        <Button fx:id="guardarCargo" layoutX="823.0" layoutY="563.0" mnemonicParsing="false" onAction="#guardarUsuario" text="Guardar" textAlignment="CENTER" />
+
+
+    </children>
+
+
+</AnchorPane>

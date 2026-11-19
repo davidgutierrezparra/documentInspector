@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="funcionalidad3" prefHeight="667.0" prefWidth="1142.0" styleClass="color1-1"
+            stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.unad.documentinspector.FuncionalidadesController">
+    <children>
+
+        <Label layoutX="37.0" layoutY="17.0" text="Bandeja Documental">
+            <font>
+                <Font name="Arial Bold" size="20.0"/>
+            </font>
+        </Label>
+
+
+        <TableView fx:id="tablaFuncion3" layoutX="38.0" layoutY="89.0" prefHeight="602.0" prefWidth="837.0"
+                   styleClass="tabla-apli" stylesheets="@../css/styles.css">
+            <columns>
+                <TableColumn fx:id="nombre" prefWidth="179.0" text="Nombre"/>
+                <TableColumn fx:id="fecha" prefWidth="111.0" text="Fecha"/>
+                <TableColumn fx:id="tipo" prefWidth="116.0" text="Tipo"/>
+                <TableColumn fx:id="areas" prefWidth="136.0" text="Area"/>
+                <TableColumn fx:id="registra" prefWidth="148.0" text="Registra"/>
+                <TableColumn fx:id="aprobacion" prefWidth="145.0" text="Aprobacion"/>
+            </columns>
+        </TableView>
+
+
+        <Button layoutX="38.0" layoutY="63.0" mnemonicParsing="false" onAction="#aprobarDocumento" text="Aprobar"
+                textAlignment="CENTER"/>
+
+    </children>
+
+
+</AnchorPane>

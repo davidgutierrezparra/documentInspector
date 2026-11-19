@@ -1,0 +1,36 @@
+.BorderPane-fondo-login {
+    -fx-background-image: url("../imagenes/login.png");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+.BorderPane-fondo-menu {
+    -fx-background-image: url("../imagenes/base.png");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+.fondo-transparente {
+    -fx-background-color: rgba(184, 203, 197, 0.10);
+}
+
+.cuadro-sin-borde {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-insets: 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+
+.campo-sin-borde {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-insets: 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
